@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Donitas Karacol</title>
+<meta name="description" content="Donas en forma de caracol, hechas con amor, creatividad y glaseado. Pedidos por DM en CDMX." />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Poppins', sans-serif; background: #0f0f14; color: #fff; }
+a { color: inherit; text-decoration: none; }
+
+
+header {
+min-height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 2rem;
+background: radial-gradient(circle at top, #ff9ecb33, transparent 60%);
+}
+
+
+.hero {
+max-width: 1100px;
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 2rem;
+align-items: center;
+}
+
+
+.hero-text h1 {
+font-size: clamp(2.2rem, 4vw, 3.5rem);
+line-height: 1.1;
+margin-bottom: 1rem;
+}
+
+
+.hero-text p {
+color: #cfcfe1;
+margin-bottom: 1.5rem;
+font-size: 1.05rem;
+}
+
+
+.cta {
+display: inline-block;
+padding: 0.9rem 1.6rem;
+background: linear-gradient(135deg, #ff77b7, #ffb347);
+color: #000;
+font-weight: 600;
+border-radius: 999px;
+transition: transform .2s ease, box-shadow .2s ease;
+box-shadow: 0 8px 25px rgba(255,119,183,.35);
+}
+
+
+.cta:hover { transform: translateY(-2px); box-shadow: 0 12px 35px rgba(255,119,183,.5); }
+
+
+.hero-img {
+display: flex;
+justify-content: center;
+}
+
+
+.hero-img img {
+max-width: 100%;
+border-radius: 24px;
+box-shadow: 0 20px 50px rgba(0,0,0,.5);
+}
+
+
+section {
+padding: 4rem 2rem;
+max-width: 1100px;
