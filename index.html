@@ -1,79 +1,174 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Donitas Karacol</title>
-<meta name="description" content="Donas en forma de caracol, hechas con amor, creatividad y glaseado. Pedidos por DM en CDMX." />
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-<style>
-* { box-sizing: border-box; margin: 0; padding: 0; }
-body { font-family: 'Poppins', sans-serif; background: #0f0f14; color: #fff; }
-a { color: inherit; text-decoration: none; }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Donitas Karacol</title>
+  <meta name="description" content="Donas en forma de caracol, hechas con amor, creatividad y glaseado. Pedidos por DM en CDMX." />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Poppins', sans-serif; background: #0f0f14; color: #fff; }
+    a { color: inherit; text-decoration: none; }
 
 
-header {
-min-height: 100vh;
-display: flex;
-align-items: center;
-justify-content: center;
-padding: 2rem;
-background: radial-gradient(circle at top, #ff9ecb33, transparent 60%);
-}
+    header {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      background: radial-gradient(circle at top, #ff9ecb33, transparent 60%);
+    }
 
+    .hero {
+      max-width: 1100px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      align-items: center;
+    }
 
-.hero {
-max-width: 1100px;
-display: grid;
-grid-template-columns: 1fr 1fr;
-gap: 2rem;
-align-items: center;
-}
+    .hero-text h1 {
+      font-size: clamp(2.2rem, 4vw, 3.5rem);
+      line-height: 1.1;
+      margin-bottom: 1rem;
+    }
+    
+    .hero-text p {
+      color: #cfcfe1;
+      margin-bottom: 1.5rem;
+      font-size: 1.05rem;
+    }
 
+    .cta {
+      display: inline-block;
+      padding: 0.9rem 1.6rem;
+      background: linear-gradient(135deg, #ff77b7, #ffb347);
+      color: #000;
+      font-weight: 600;
+      border-radius: 999px;
+      transition: transform .2s ease, box-shadow .2s ease;
+      box-shadow: 0 8px 25px rgba(255,119,183,.35);
+    }
 
-.hero-text h1 {
-font-size: clamp(2.2rem, 4vw, 3.5rem);
-line-height: 1.1;
-margin-bottom: 1rem;
-}
+    .cta:hover { transform: translateY(-2px); box-shadow: 0 12px 35px rgba(255,119,183,.5); }
 
+    .hero-img {
+      display: flex;
+      justify-content: center;
+    }
 
-.hero-text p {
-color: #cfcfe1;
-margin-bottom: 1.5rem;
-font-size: 1.05rem;
-}
+    .hero-img img {
+      max-width: 100%;
+      border-radius: 24px;
+      box-shadow: 0 20px 50px rgba(0,0,0,.5);
+    }
 
+    section {
+      padding: 4rem 2rem;
+      max-width: 1100px;
+      margin: auto;
+    }
 
-.cta {
-display: inline-block;
-padding: 0.9rem 1.6rem;
-background: linear-gradient(135deg, #ff77b7, #ffb347);
-color: #000;
-font-weight: 600;
-border-radius: 999px;
-transition: transform .2s ease, box-shadow .2s ease;
-box-shadow: 0 8px 25px rgba(255,119,183,.35);
-}
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+    }
 
+    .card {
+      background: #171722;
+      padding: 1.8rem;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,.35);
+    }
 
-.cta:hover { transform: translateY(-2px); box-shadow: 0 12px 35px rgba(255,119,183,.5); }
+    .card h3 { margin-bottom: .6rem; }
+    .card p { color: #b8b8d0; font-size: .95rem; }
 
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      margin-top: 2rem;
+    }
 
-.hero-img {
-display: flex;
-justify-content: center;
-}
+    .gallery div {
+      background: #222;
+      border-radius: 18px;
+      aspect-ratio: 1/1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #888;
+      font-size: .9rem;
+    }
 
+    footer {
+      padding: 2.5rem 2rem;
+      text-align: center;
+      color: #9c9cb3;
+      background: #0b0b10;
+    }
 
-.hero-img img {
-max-width: 100%;
-border-radius: 24px;
-box-shadow: 0 20px 50px rgba(0,0,0,.5);
-}
+    @media (max-width: 768px) {
+      .hero { grid-template-columns: 1fr; text-align: center; }
+      .hero-text { order: 2; }
+      .hero-img { order: 1; }
+    }
 
+    </style>
+</head>
+  
+<body>
+  
+<header>
+  <div class="hero">
+    <div class="hero-text">
+      <h1>Donitas Karacol 🐌🍩</h1>
+      <p>Dona diferente: lenta por fuera, deliciosa por dentro. Hechas con amor, creatividad y mucho glaseado.</p>
+      <a class="cta" href="https://instagram.com/donitaskyc" target="_blank">Pedir por Instagram DM</a>
+    </div>
+    <div class="hero-img">
+      <img src="https://dummyimage.com/500x500/ff9ecb/000000&text=Donitas+Karacol" alt="Donitas Karacol">
+    </div>
+  </div>
+</header>
 
-section {
-padding: 4rem 2rem;
-max-width: 1100px;
+<section>
+  <h2 style="margin-bottom:1.5rem">¿Por qué Donitas Karacol?</h2>
+  <div class="features">
+    <div class="card">
+      <h3>✨ Diseño único</h3>
+      <p>Donas en forma de caracol que llaman la atención desde el primer vistazo.</p>
+    </div>
+    <div class="card">
+      <h3>🍩 Sabor artesanal</h3>
+      <p>Recetas caseras, suaves y con glaseados irresistibles.</p>
+    </div>
+    <div class="card">
+      <h3>📍 CDMX</h3>
+      <p>Pedidos locales por DM, ideales para antojos y eventos.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Galería</h2>
+  <p style="color:#b8b8d0; margin-top:.5rem">Algunas de nuestras donitas favoritas</p>
+  <div class="gallery">
+    <div>Foto 1</div>
+    <div>Foto 2</div>
+    <div>Foto 3</div>
+    <div>Foto 4</div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 Donitas Karacol · Hechas con dulzura 🐌</p>
+  <p><a href="https://instagram.com/donitaskyc" target="_blank">Instagram</a></p>
+</footer>
+
+</body>
 </html>
